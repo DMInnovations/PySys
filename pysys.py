@@ -49,3 +49,11 @@ class RAM:
         
     def usedRAM():
         return np.round(psutil.virtual_memory().used/1000000000, 1)
+    
+class Memory:
+    def storageUsage(file = "/"):
+        storage = psutil.disk_usage(file)
+        return storage
+    
+    def partitions():
+        return psutil.disk_partitions(True)
