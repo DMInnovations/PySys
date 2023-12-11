@@ -20,7 +20,7 @@ setup(
     long_description_content_type="text/markdown",
     long_description=long_description,
     packages=find_packages(),
-    install_requires=['os', 'platform', 'psutil', 'numpy'],
+    install_requires=['platform', 'psutil', 'numpy'],
     keywords=['python', 'geekbench', 'system', 'python3', 'specs', 'pysys', 'dminnovations'],
     classifiers=[
         "Development Status :: 1 - Planning",
