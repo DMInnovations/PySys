@@ -7,31 +7,31 @@ import numpy as np
 class CPU:
     # CPU Core Count
     def cpuCoreCount():
-        print(f"Core Count: {os.cpu_count()}")
+        return os.cpu_count()
 
     # Processor/CPU Type  
     def processorType():
-        print(f"Processor: {platform.processor()}")
+        return platform.processor()
         
     # Computer Architecture
     def computerArchitecture():
-        print(f"Architecture: {platform.architecture()}")
+        return platform.architecture()
     
     # Physcial CPU Cores 
     def phyicalCoresCPU():
-        print(psutil.cpu_count(True))
+        return psutil.cpu_count(True)
 
     # Logical CPU Cores 
     def logicalCoresCPU():
-        print(psutil.cpu_count(False))
+        return psutil.cpu_count(False)
 
     # Overall CPU Usage
     def CPUsage():
-        print(f"CPU Usage: {psutil.cpu_percent()}%")
+       return psutil.cpu_percent()
         
 class OSType:
     def OS():
-        print(f"OS: {platform.system()}")
+        return platform.system()
 
 class RAM:
     # Overall RAM Usage   
@@ -39,16 +39,13 @@ class RAM:
         ram = np.round(psutil.virtual_memory().used/1000000000, 1)
         totalRAM = np.round(psutil.virtual_memory().total/1000000000, 2)
         swap = np.round(psutil.swap_memory().used/1000000000, 1)
-        print(f"RAM Usage: {ram} GB / {totalRAM} GB\nSwap Memory: {swap} GB")
+        return ram, totalRAM, swap
         
     def swapMemory():
-        swap = np.round(psutil.swap_memory().used/1000000000, 1)
-        print(f"Swap Memory: {swap} GB")
+        return np.round(psutil.swap_memory().used/1000000000, 1)
         
     def totalRAM():
-        totalRAM = np.round(psutil.virtual_memory().total/1000000000, 2)
-        print(f"Total RAM: {totalRAM} GB")
+        return np.round(psutil.virtual_memory().total/1000000000, 2)
         
     def usedRAM():
-        usedRAM = np.round(psutil.virtual_memory().used/1000000000, 1)
-        print(f"Used RAM: {usedRAM} GB")
+        return np.round(psutil.virtual_memory().used/1000000000, 1)
