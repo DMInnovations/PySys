@@ -69,7 +69,7 @@ test_requirements = [
 
 about = {}
 here = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(here, "src", "requests", "__version__.py"), "r", "utf-8") as f:
+with open(os.path.join(here), "r", "utf-8") as f:
     exec(f.read(), about)
 
 with open("README.md", "r", "utf-8") as f:
