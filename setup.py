@@ -8,7 +8,6 @@ setup(
     description='Pass',
     url='https://github.com/DMInnovations/PySys',
     packages=find_packages(),
-    install_requires=["os", "numpy", "platform", "psutil"],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
