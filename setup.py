@@ -7,12 +7,12 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = 'v2.3'
+VERSION = 'v2.2'
 DESCRIPTION = "Simple library to see your computer's spec information."
 
 # Setting up
 setup(
-    name="pysys",
+    name="PySys",
     version=VERSION,
     author="DMInnovations",
     author_email="None",
