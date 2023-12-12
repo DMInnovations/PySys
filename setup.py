@@ -68,22 +68,19 @@ test_requirements = [
 ]
 
 about = {}
-here = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(here), "r", "utf-8") as f:
-    exec(f.read(), about)
 
 with open("README.md", "r", "utf-8") as f:
     readme = f.read()
 
 setup(
-    name=about["__title__"],
-    version=about["__version__"],
+    name=about["PySys"],
+    version=about["2.2"],
     description=about["__description__"],
     long_description=readme,
     long_description_content_type="text/markdown",
     author=about["__author__"],
     author_email=about["__author_email__"],
-    url=about["__url__"],
+    url=about["https://github.com/DMInnovations/PySys"],
     packages=["pysys"],
     package_data={"": ["LICENSE", "NOTICE"]},
     package_dir={"": "src"},
