@@ -1,0 +1,17 @@
+name: PySys
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  import_file:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: PySys
+      run: setup.py
