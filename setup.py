@@ -58,12 +58,6 @@ if sys.argv[-1] == "publish":
     os.system("twine upload dist/*")
     sys.exit()
 
-requires = [
-    "charset_normalizer>=2,<4",
-    "idna>=2.5,<4",
-    "urllib3>=1.21.1,<3",
-    "certifi>=2017.4.17",
-]
 test_requirements = [
     "pytest-httpbin==2.0.0",
     "pytest-cov",
@@ -90,12 +84,11 @@ setup(
     author=about["__author__"],
     author_email=about["__author_email__"],
     url=about["__url__"],
-    packages=["requests"],
+    packages=["pysys"],
     package_data={"": ["LICENSE", "NOTICE"]},
     package_dir={"": "src"},
     include_package_data=True,
     python_requires=">=3.7",
-    install_requires=requires,
     license=about["__license__"],
     zip_safe=False,
     classifiers=[
