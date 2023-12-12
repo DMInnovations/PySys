@@ -4,9 +4,7 @@ setup(
     name='PySys',
     version='2.2',
     author='DMInnovations',
-    author_email='pass@email.com',
-    description='Pass',
-    url='https://github.com/DMInnovations/PySys',
+    url='https://github.com/DMInnovations/PySys.git',
     packages=find_packages(),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
