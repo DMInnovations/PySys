@@ -6,7 +6,7 @@ Simple library to see your computer's spec information.
 - More...
 
 # Installation
-Use:
+Use *Work in progress; do not use this command, at the moment:
     pip install "git+https://github.com/DMInnovations/PySys.git"
 
 IF, you do not have; please install them:
