@@ -7,20 +7,21 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = 'v2.2'
-DESCRIPTION = "Simple library to see your computer's spec information."
+VERSION = '2.2'
+DESCRIPTION = 'Simple library to see your computer spec information.'
+LONG_DESCRIPTION = 'None'
 
 # Setting up
 setup(
     name="PySys",
     version=VERSION,
-    author="DMInnovations",
-    author_email="None",
+    author="DMInnovation",
+    author_email="<none>",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=long_description,
     packages=find_packages(),
-    keywords=['python', 'geekbench', 'system', 'python3', 'specs', 'pysys', 'dminnovations'],
+    keywords=['python', 'python3', 'pysys', 'PySys', 'dminnovations', 'geekbench', 'system'],
     classifiers=[
         "Development Status :: 1 - Planning",
         "Intended Audience :: Developers",
