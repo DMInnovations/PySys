@@ -73,8 +73,8 @@ with open("README.md", "r", "utf-8") as f:
     readme = f.read()
 
 setup(
-    name=about["PySys"],
-    version=about["2.2"],
+    name=about["__name__"],
+    version=about["__version__"],
     description=about["__description__"],
     long_description=readme,
     long_description_content_type="text/markdown",
