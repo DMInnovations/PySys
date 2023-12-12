@@ -5,5 +5,15 @@ Simple library to see your computer's spec information.
 - OS Name
 - More...
 
+# Installation
+Use:
+    pip install "git+https://github.com/DMInnovations/PySys.git"
+
+IF, you do not have; please install them:
+- NumPy
+- OS
+- Platform
+- psutil
+
 # Graphs
 PySys is able to display information with a simple bar graph in the termaial.
