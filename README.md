@@ -6,8 +6,7 @@ Simple library to see your computer's spec information.
 - More...
 
 # Installation
-Use:
-    <gh repo clone DMInnovations/PySys>
+gh repo clone DMInnovations/PySys
 
 IF, you do not have; please install them:
 - NumPy
