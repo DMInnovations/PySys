@@ -6,8 +6,8 @@ Simple library to see your computer's spec information.
 - More...
 
 # Installation
-Use *Work in progress; do not use this command, at the moment:
-    pip install "git+https://github.com/DMInnovations/PySys.git"
+Use:
+    <gh repo clone DMInnovations/PySys>
 
 IF, you do not have; please install them:
 - NumPy
