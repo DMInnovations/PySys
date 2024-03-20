@@ -2,6 +2,7 @@ import os
 import platform
 import psutil
 import numpy as np
+import cpuinfo
 
 
 class CPU:
@@ -28,6 +29,10 @@ class CPU:
     # Overall CPU Usage
     def CPUsage():
        return psutil.cpu_percent()
+
+    # CPU Info
+    def CPU():
+        return cpuinfo.get_cpu_info()["brand_raw"]
         
 class OSType:
     def OS():
