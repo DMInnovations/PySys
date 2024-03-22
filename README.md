@@ -14,6 +14,7 @@ IF, you do not have; please install them:
 - OS
 - Platform
 - psutil
+- cpuinfo
 
 # Graphs
 PySys is able to display information with a simple bar graph in the termaial.
